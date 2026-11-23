@@ -63,12 +63,12 @@ CREATE TABLE ratings (
 SHOW TABLES;
 
 
-SELECT 'users' AS tbl, COUNT(3000) AS total FROM users
+SELECT 'users' AS tbl, COUNT(*) AS total FROM users
 UNION ALL
-SELECT 'subscriptions', COUNT(4497) FROM subscriptions
+SELECT 'subscriptions', COUNT(*) FROM subscriptions
 UNION ALL
-SELECT 'shows', COUNT(100) FROM shows
+SELECT 'shows', COUNT(*) FROM shows
 UNION ALL
-SELECT 'watch_sessions', COUNT(100351) FROM watch_sessions
+SELECT 'watch_sessions', COUNT(*) FROM watch_sessions
 UNION ALL
-SELECT 'ratings', COUNT(5000) FROM ratings;
+SELECT 'ratings', COUNT(*) FROM ratings;
